@@ -1,6 +1,6 @@
-const pageUrl = encodeURIComponent("https://pagickk.web.app");
+const pageUrl = encodeURIComponent("https://pagick.vercel.app");
 const shareText = encodeURIComponent(
-  "Hey! Struggling to create a Cover Page? PAGiCK is here to help! Check it out here: https://pagickk.web.app"
+  "Hey! Struggling to create a Cover Page? PAGiCK is here to help! Check it out here: https://pagick.vercel.app"
 );
 
 function toggleSharePopup() {
@@ -51,7 +51,7 @@ function shareOnWhatsApp() {
 }
 
 function copyForInstagram() {
-  const textToCopy = `Hey! Struggling to create a Cover Page? PAGiCK is here to help! Check it out here: https://pagickk.web.app`;
+  const textToCopy = `Hey! Struggling to create a Cover Page? PAGiCK is here to help! Check it out here: https://pagick.vercel.app`;
 
   navigator.clipboard
     .writeText(textToCopy)

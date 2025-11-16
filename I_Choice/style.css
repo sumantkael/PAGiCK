@@ -1,26 +1,4 @@
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* --- MAIN CONTENT --- */
-main {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-}
-
 
 .dName {
   font-weight: 500;

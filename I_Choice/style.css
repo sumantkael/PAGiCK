@@ -1,11 +1,11 @@
-/* Reset */
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* Make body a vertical flexbox */
+
 body {
   display: flex;
   flex-direction: column;
@@ -14,14 +14,14 @@ body {
 
 /* --- MAIN CONTENT --- */
 main {
-  flex: 1; /* Fills space above footer */
+  flex: 1;
   display: flex;
-  align-items: center; /* Vertical center */
-  justify-content: center; /* Horizontal center */
+  align-items: center;
+  justify-content: center;
   padding: 2rem 1rem;
 }
 
-/* Your existing design */
+
 .dName {
   font-weight: 500;
   background-color: rgb(19, 78, 60);
@@ -39,7 +39,7 @@ main {
   font-size: 12px;
 }
 
-/* The grid of cards inside main */
+
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -89,7 +89,7 @@ main {
   cursor: pointer;
   font-weight: 500;
   align-items: center;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #4c8a7a;
   background: rgb(19, 78, 60);
 }
 
@@ -133,5 +133,5 @@ footer {
     margin-top: 780px;
     grid-template-columns: 1fr;
   }
- 
+
 }

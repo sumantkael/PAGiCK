@@ -63,7 +63,7 @@ function copyForInstagram() {
     });
 }
 function copyUPI() {
-  const textToCopy = `volvick5050@okhdfcbank`;
+  const textToCopy = `volvick@axl`;
 
   navigator.clipboard
     .writeText(textToCopy)

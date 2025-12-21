@@ -1,115 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAGiCK | Welcome</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGiCK is now DCØV</title>
+    
+    <!-- Favicon (Optional - using same as previous) -->
+    <link rel="icon" href="https://storage.googleapis.com/gpt-engineer-file-uploads/U39oa2AfZ5bi8NbWPs8ibsa13Tn2/uploads/1766268828854-light%20mode.png" type="image/x-icon" />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      href="https://res.cloudinary.com/dlfsodrio/image/upload/v1762956471/fra_d4xhrr.png"
-      type="image/x-icon"
-    />
+    <!-- Importing Space Grotesk Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./basestyle.css" />
-    <link rel="stylesheet" href="./style.css?v=3" />
+    <style>
+        /* --- RESET & BASE STYLES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Primary Meta -->
+        body {
+            background-color: #0c0c0c; /* Dark Swiss Background */
+            font-family: 'Space Grotesk', sans-serif;
+            color: #ffffff;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Prevent scrolling if content fits */
+            position: relative;
+        }
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="PAGiCK — Create Cover Pages Instantly" />
-    <meta
-      name="description"
-      content="Create professional, clean cover pages within minutes. No sign-up required. Made for students. Built by Volvick."
-    />
+        /* Optional: Subtle grain or gradient background for texture */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0) 60%);
+            z-index: -1;
+            pointer-events: none;
+        }
 
-    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pagick.vercel.app/" />
-    <meta property="og:site_name" content="PAGiCK" />
-    <meta property="og:title" content="PAGiCK — Create Cover Pages Instantly" />
-    <meta
-      property="og:description"
-      content="Instantly design professional, clean cover pages. No sign-up required. Made for students and creators. Built by Volvick."
-    />
-    <meta
-      property="og:image"
-      content="https://res.cloudinary.com/dlfsodrio/image/upload/v1762626736/Frame_27_gcr7qd.png"
-    />
-    <meta
-      property="og:image:alt"
-      content="Preview of PAGiCK cover page templates"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+        /* --- CONTAINER --- */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="PAGiCK — Create Cover Pages Instantly"
-    />
-    <meta
-      name="twitter:description"
-      content="Clean, professional cover pages within minutes. No sign-up required. Made for students and creators. Built by Volvick."
-    />
-    <meta
-      name="twitter:image"
-      content="https://res.cloudinary.com/dlfsodrio/image/upload/v1762626736/Frame_27_gcr7qd.png"
-    />
-    <meta
-      name="twitter:image:alt"
-      content="Preview of PAGiCK cover page templates"
-    />
-    <meta name="twitter:site" content="@volvickx" />
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://pagick.vercel.app/" />
-  </head>
-  <body>
-    <a href="./supportPage/index.html">
-      <p class="support">Support</p>
-    </a>
-    <!-- Hero Section -->
-    <div class="box">
-      <div class="main-heading">
-        Helps You Create
-        <br />
-        <span>Cover Page</span>
-        <br />
-        Within 2 Minutes
-        <div class="btn-container">
-          <a href="./I_Choice/index.html" class="get-started-btn">
-            Get started <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/volvick/" title="linkedin"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="mailto:contact.volvick@gmail.com" title="Email">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
-        </div>
-      </div>
+        /* --- BADGE --- */
+        .badge {
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 11px;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 8px 18px;
+            border-radius: 50px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1 {
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #ffffff;
+            letter-spacing: -1px;
+        }
+
+        /* The Red Ø */
+        .brand-highlight {
+            color: #D81E1F; /* Requested Color */
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            color: #888888;
+            font-weight: 400;
+            margin-bottom: 40px;
+            max-width: 80%;
+            line-height: 1.6;
+        }
+
+        /* --- BUTTON --- */
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 40px;
+            background-color: #fcfcfc; /* Solid White */
+            color: #0c0c0c; /* Black Text */
+            border-radius: 100px; /* Pill Shape */
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 1px solid #fcfcfc;
+            gap: 10px;
+        }
+
+        .btn:hover {
+            background-color: #e0e0e0;
+            border-color: #e0e0e0;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn:active {
+            transform: scale(0.96);
+        }
+        
+        /* Arrow icon animation */
+        .btn i {
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover i {
+            transform: translateX(4px);
+        }
+
+        /* --- FOOTER --- */
+        .footer-note {
+            position: absolute;
+            bottom: 30px;
+            font-size: 12px;
+            color: #444;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 14px;
+                max-width: 100%;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Badge -->
+        <span class="badge">Announcement</span>
+
+        <!-- Main Headline -->
+        <h1>
+            PAGiCK is shifted and <br>rebrand to DC<span class="brand-highlight">Ø</span>V
+        </h1>
+
+        <!-- Subtext -->
+        <p>Please click the below button to visit the website</p>
+
+        <!-- Button -->
+        <a href="https://dcov.vercel.app/" class="btn">
+            Visit Now <i class="fa-solid fa-arrow-right"></i>
+        </a>
     </div>
-    <footer>
-      <!-- footer text -->
-      <p>
-        © 2025 PAGiCK — A Project by
-        <a href="mailto:contact.volvick@gmail.com">Volvick</a>.
-      </p>
-    </footer>
-  </body>
+
+    <!-- Small footer note -->
+    <div class="footer-note">
+        &copy; 2025 DCØV
+    </div>
+
+</body>
 </html>
